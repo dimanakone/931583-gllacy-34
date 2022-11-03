@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
-  <body>
+  <body class="color-theme">
 
     <!-- HEADER -->
     <header class="page-header">
@@ -22,7 +22,7 @@
         <!-- Navigation -->
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Каталог</a>
+            <a class="navigation-link navigation-catalog" href="catalog.html">Каталог</a>
             <div class="popover popover-catalog">
               <ul class="popover-catalog-list">
                 <li class="popover-catalog-item">
@@ -76,11 +76,10 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link-user navigation-login" href="#">
-              <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="none"
+              <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M9 2.52c0-.36.3-.66.67-.66h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 0 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3.86a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 2.52Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.33a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 12.33a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z"
-                  fill="#2D3440" />
+                  d="M9 2.52c0-.36.3-.66.67-.66h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 0 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3.86a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 2.52Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.33a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 12.33a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z" />
               </svg>
               Вход
             </a>
@@ -115,57 +114,54 @@
             </div>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-user navigation-card" href="#">
-              <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="none"
+            <a class="navigation-link-user navigation-cart" href="#">
+              <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
-                  fill="#2D3440" />
+                  d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
               </svg>
               2 товара
             </a>
             <!-- Popover Cart -->
             <div class="popover popover-cart">
-              <div class="popover-cart-container-full">
-                <span class="popover-cart-title">Корзина</span>
-                <ul class="popover-cart-list">
-                  <li class="popover-cart-item">
+              <span class="popover-cart-title">Корзина</span>
+              <ul class="popover-cart-list">
+                <li class="popover-cart-item">
+                  <a class="popover-product-link" href="#">
+                    <img class="popover-product-image" src="images/products/raspberry.jpg" width="46" height="46"
+                      alt="Малиновое мороженое.">
+                  </a>
+                  <div class="popover-product-wrapper">
                     <a class="popover-product-link" href="#">
-                      <img class="popover-product-image" src="images/products/raspberry.jpg" width="46" height="46"
-                        alt="Малиновое мороженое.">
+                      <span class="popover-product-title">Малинка</span>
                     </a>
-                    <div class="popover-product-wrapper">
-                      <a class="popover-product-link" href="#">
-                        <span class="popover-product-title">Малинка</span>
-                      </a>
-                      <p class="popover-product-details">1 кг х 310 ₽</p>
-                    </div>
-                    <span class="popover-product-price">310 ₽</span>
-                    <button class="popover-product-delete" type="button">
-                      <span class="visually-hidden">Удалить товар.</span>
-                    </button>
-                  </li>
-                  <li class="popover-cart-item">
+                    <p class="popover-product-details">1 кг х 310 ₽</p>
+                  </div>
+                  <span class="popover-product-price">310 ₽</span>
+                  <button class="popover-product-delete" type="button">
+                    <span class="visually-hidden">Удалить товар.</span>
+                  </button>
+                </li>
+                <li class="popover-cart-item">
+                  <a class="popover-product-link" href="#">
+                    <img class="popover-product-image" src="images/products/bubblegam.jpg" width="46" height="46"
+                      alt="Мороженное со вкусом бабл-гам.">
+                  </a>
+                  <div class="popover-product-wrapper">
                     <a class="popover-product-link" href="#">
-                      <img class="popover-product-image" src="images/products/bubblegam.jpg" width="46" height="46"
-                        alt="Мороженное со вкусом бабл-гам.">
+                      <span class="popover-product-title">Бабл-гам</span>
                     </a>
-                    <div class="popover-product-wrapper">
-                      <a class="popover-product-link" href="#">
-                        <span class="popover-product-title">Бабл-гам</span>
-                      </a>
-                      <p class="popover-product-details">1.5 кг х 320 ₽</p>
-                    </div>
-                    <span class="popover-product-price">480 ₽</span>
-                    <button class="popover-product-delete" type="button">
-                      <span class="visually-hidden">Удалить товар.</span>
-                    </button>
-                  </li>
-                </ul>
-                <div class="popover-cart-wrapper">
-                  <a class="button-other" href="#">Оформить заказ</a>
-                  <b class="popover-cart-total">Итого: 790 ₽</b>
-                </div>
+                    <p class="popover-product-details">1.5 кг х 320 ₽</p>
+                  </div>
+                  <span class="popover-product-price">480 ₽</span>
+                  <button class="popover-product-delete" type="button">
+                    <span class="visually-hidden">Удалить товар.</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="popover-cart-wrapper">
+                <a class="button-other" href="#">Оформить заказ</a>
+                <b class="popover-cart-total">Итого: 790 ₽</b>
               </div>
               <div class="popover-cart-container-empty">
                 <b class="popover-cart-description-empty">Ваша корзина пока пуста</b>
@@ -537,7 +533,7 @@
             <p class="contacts-legends">Для заказов по телефону:</p>
             <a class="tel-shop" href="tel:+78128121212">+7 (812) 812-12-12</a>
             <p class="working-hours">(с 10 до 20 ежедневно)</p>
-            <button class="button-other" type="button">Форма обратной связи</button>
+            <button class="button-other button-feedback" type="button">Форма обратной связи</button>
           </div>
         </section>
       </div>
@@ -645,6 +641,8 @@
         </section>
       </div>
     </div>
+
+    <script src="js/main.js"></script>
   </body>
 
 </html>

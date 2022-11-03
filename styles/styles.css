@@ -49,11 +49,15 @@ body {
 /* Color active slider */
 /* при переключении слайдера, добавляется класс в body,
 чтобы поменять background-color у всей страницы */
-body .slider-active-yellow {
+body.slider-active-pink {
+  background-color: #feafc3;
+}
+
+body.slider-active-yellow {
   background-color: #fcc850;
 }
 
-body .slider-active-blue {
+body.slider-active-blue {
   background-color: #69a9ff;
 }
 
@@ -134,12 +138,8 @@ img {
   border-radius: 30px;
 }
 
-.navigation-link-current {
-  background-color: #ff4a78;
-  color: #fcfcfc;
-}
-
 .navigation-link-current:hover {
+  fill: #2d3440;
   color: #2d3440;
 }
 
@@ -162,7 +162,14 @@ img {
   position: relative;
   display: block;
   color: #2d3440;
+  fill: #2d3440;
   text-decoration: none;
+}
+
+a.navigation-link-current {
+  background-color: #ff4a78;
+  color: #fcfcfc;
+  fill: #fcfcfc;
 }
 
 .navigation-link-user:hover {
@@ -195,7 +202,7 @@ img {
   padding: 16px;
 }
 
-.navigation-card,
+.navigation-cart,
 .navigation-login {
   padding: 6px 16px 6px 38px;
   background-color: rgba(252, 252, 252, 0.3);
@@ -211,7 +218,7 @@ img {
   margin: auto;
 }
 
-.navigation-card .navigation-icon,
+.navigation-cart .navigation-icon,
 .navigation-login .navigation-icon {
   right: auto;
   left: 16px;
@@ -1739,7 +1746,7 @@ img {
 
 /* Popover Cart */
 /* full */
-.popover-cart-container-full {
+.popover-cart {
   box-sizing: border-box;
   width: 441px;
   padding: 48px;
@@ -1914,6 +1921,10 @@ img {
   color: #2d3440;
   text-decoration: none;
   border-bottom: 1px solid #2d3440;
+}
+
+.popover-active {
+  display: block;
 }
 
 
